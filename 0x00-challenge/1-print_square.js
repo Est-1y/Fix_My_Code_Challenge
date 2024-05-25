@@ -5,6 +5,8 @@
     The size of the square must be the first argument 
     of the program.
 */
+console.log("Arguments:", process.argv);
+console.log("Node.js version:", process.version);
 
 if (process.argv.length <= 2) {
     process.stderr.write("Missing argument\n");
