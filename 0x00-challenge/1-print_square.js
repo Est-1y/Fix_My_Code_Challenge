@@ -21,9 +21,6 @@ if (isNaN(size) || size <= 0) {
     process.stderr.write("Example: ./1-print_square.js 8\n");
     process.exit(1);
 }
-
-console.log("Size:", size);
 for (let i = 0; i < size; i++) {
-    console.log("Iteration:", i);
     console.log("#".repeat(size));
 }
