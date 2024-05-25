@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/bin/node
 /*
     Print a square with the character #
     
@@ -23,9 +23,9 @@ if (isNaN(size) || size <= 0) {
 }
 
 for (let i = 0; i < size; i++) {
-    let row = "";
+    let row = '';
     for (let j = 0; j < size; j++) {
-        row += "#";
+        row += '#';
     }
     console.log(row);
 }
