@@ -16,7 +16,7 @@ if (process.argv.length !== 3) {
 
 const size = parseInt(process.argv[2], 10);
 
-if (isNaN(size) || size <= 0) {
+if (isNaN(size) || !Number.isInteger(size) || size <= 0) {
     process.stderr.write("Invalid size: size must be a positive integer\n");
     process.stderr.write("Usage: ./1-print_square.js <size>\n");
     process.stderr.write("Example: ./1-print_square.js 8\n");
