@@ -22,6 +22,8 @@ if (isNaN(size) || size <= 0) {
     process.exit(1);
 }
 
+console.log("Size:", size);
 for (let i = 0; i < size; i++) {
+    console.log("Iteration:", i);
     console.log("#".repeat(size));
 }
